@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <style>
-        
         .btn {
             font-family: monospace
         }
@@ -25,8 +24,8 @@
 
         table {
             border: solid 2px #6a1b9a;
+            font-size:20px;
         }
-
     </style>
 
 </head>
@@ -39,14 +38,14 @@
 
             <h1 class="purple-text text-darken-3"
                 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                Item Details!</h1>
+                Details!</h1>
 
             <a href="stuff.html" class="waves-effect cyan darken-1 waves-light btn">
                 Go Back!
                 <i class="large material-icons left">chevron_left</i>
             </a>
 
-            <div class="section"></div>
+            <div class="section flow-text"></div>
 
             <div class="divider purple darken-3"></div>
 
@@ -54,19 +53,33 @@
 
             <table class="highlight responsive yellow lighten-3">
 
-                <tr>
-                    <th>Item Name</th>
-                    <td>name</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                       <td>Movie</td>
+                       <td>Encanto</td>
+                       <td>Watched</td>
+                       <td>10/10</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+            <div class="section"></div>
+
+            <table class="highlight responsive yellow lighten-3">
 
                 <tr>
-                    <th>Category 2</th>
-                    <td>something</td>
-                </tr>
-
-                <tr>
-                    <th>Details</th>
-                    <td>something</td>
+                    <th>Extra Details</th>
+                    <td>~~</td>
                 </tr>
 
             </table>
@@ -90,30 +103,36 @@
 
                         <h1 class="cyan-text text-darken-1"
                             style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-                            Edit Item:</h1>
+                            Edit:</h1>
 
                         <div class="row">
 
                             <div class="input-field col s8">
                                 <i class="material-icons prefix purple-text text-darken-3">star</i>
-                                <label for="item_name">Item Name</label>
+                                <label for="item_name">Title</label>
                                 <input id="item_name" type="text" required>
                             </div>
 
                             <div class="input-field col s4">
                                 <i class="material-icons prefix purple-text text-darken-3">star</i>
-                                <label for="quantity">Item Quantity</label>
-                                <input id="quantity" type="number" value="1" required>
+                                <label for="status">Status</label>
+                                <input id="status" type="text" required>
                             </div>
 
                         </div> <!-- end row 1 -->
 
                         <div class="row">
 
-                            <div class="input-field col s12">
-                                <i class="material-icons prefix purple-text text-darken-3">star</i>
+                            <div class="input-field col s8">
+                                <i class="material-icons prefix purple-text text-darken-3">star_border</i>
                                 <textarea id="textarea" class="materialize-textarea"></textarea>
-                                <label for="description">Description</label>
+                                <label for="description">Extra Details</label>
+                            </div>
+
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix purple-text text-darken-3">star_border</i>
+                                <label for="rating">Rating</label>
+                                <input id="rating" type="number">
                             </div>
 
                         </div> <!-- end row 2 -->

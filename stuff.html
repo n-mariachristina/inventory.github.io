@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <style>
-    
     .btn {
       font-family: monospace
     }
@@ -26,7 +25,6 @@
     table {
       border: solid 2px #6a1b9a;
     }
-
   </style>
 
 </head>
@@ -37,7 +35,7 @@
 
     <h1 class="purple-text text-darken-3"
       style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-      Table</h1>
+      To Watch List!</h1>
 
     <a href="index.html" class="waves-effect cyan darken-1 waves-light btn">
       Go Back
@@ -64,31 +62,37 @@
 
             <h1 class="cyan-text text-darken-1"
               style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
-              Add Item:</h1>
+              Add:</h1>
 
-            <div class="row">
+              <div class="row">
 
-              <div class="input-field col s8">
-                <i class="material-icons prefix purple-text text-darken-3">star</i>
-                <label for="item_name">Item Name</label>
-                <input id="item_name" type="text" required>
-              </div>
+                <div class="input-field col s8">
+                    <i class="material-icons prefix purple-text text-darken-3">star</i>
+                    <label for="item_name">Title</label>
+                    <input id="item_name" type="text" required>
+                </div>
 
-              <div class="input-field col s4">
-                <i class="material-icons prefix purple-text text-darken-3">star</i>
-                <label for="quantity">Item Quantity</label>
-                <input id="quantity" type="number" value="1" required>
-              </div>
+                <div class="input-field col s4">
+                    <i class="material-icons prefix purple-text text-darken-3">star</i>
+                    <label for="status">Status</label>
+                    <input id="status" type="text" value="To Watch" required>
+                </div>
 
             </div> <!-- end row 1 -->
 
             <div class="row">
 
-              <div class="input-field col s12">
-                <i class="material-icons prefix purple-text text-darken-3">star</i>
-                <textarea id="textarea" class="materialize-textarea"></textarea>
-                <label for="description">Description</label>
-              </div>
+                <div class="input-field col s8">
+                    <i class="material-icons prefix purple-text text-darken-3">star_border</i>
+                    <textarea id="textarea" class="materialize-textarea"></textarea>
+                    <label for="description">Extra Details</label>
+                </div>
+
+                <div class="input-field col s4">
+                    <i class="material-icons prefix purple-text text-darken-3">star_border</i>
+                    <label for="rating">Rating</label>
+                    <input id="rating" type="number">
+                </div>
 
             </div> <!-- end row 2 -->
 
@@ -105,36 +109,38 @@
 
       </div> <!-- end modal -->
 
+      <!-- Dropdown Trigger -->
+      <a class='dropdown-trigger btn yellow lighten-3 black-text right' href='#' data-target='dropdown1'>Sort</a>
+
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="#!">Name</a></li>
+        <li><a href="#!">Status</a></li>
+        <li><a href="#!">Rating</a></li>
+      </ul>
+
       <div class="section"></div>
 
       <table class="highlight responsive yellow lighten-3">
 
         <thead>
           <tr>
-            <th>Category 1</th>
-            <th>Category 2</th>
-            <th>Detail</th>
+            <th>Type</th>
+            <th>Title</th>
+            <th>Status</th>
+            <th>Rating</th>
+            <th class="right">Delete</th>
+            <th class="right">Info/Edit</th>
           </tr>
         </thead>
 
         <tbody>
 
           <tr>
-            <td>something</td>
-            <td>something</td>
-            <td>something</td>
-            <td class="right">
-              <a href="item.html" class="waves-effect cyan darken-1 waves-light btn">
-                <i class="material-icons right">edit</i>Info/Edit</a>
-              <a class="waves-effect pink lighten-1 waves-light btn">delete
-                <i class="material-icons right">delete</i></a>
-            </td>
-          </tr>
-
-          <tr>
-            <td>yes</td>
-            <td>yes</td>
-            <td>yes</td>
+            <td>Show</td>
+            <td>SpongeBob SquarePants</td>
+            <td><i class="material-icons green-text">check</i></td>
+            <td>10/10</td>
             <td class="right">
               <a href="item.html" class="waves-effect cyan darken-1 waves-light btn">
                 <i class="material-icons">edit</i></a>
@@ -144,9 +150,10 @@
           </tr>
 
           <tr>
-            <td>no</td>
-            <td>no</td>
-            <td>no</td>
+            <td>Movie</td>
+            <td>Encanto</td>
+            <td><i class="material-icons green-text">check</i></td>
+            <td>10/10</td>
             <td class="right">
               <a href="item.html" class="waves-effect cyan darken-1 waves-light btn">
                 <i class="material-icons">edit</i></a>
