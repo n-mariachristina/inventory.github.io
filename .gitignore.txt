@@ -1,0 +1,2 @@
+workspace-inventory.github.io.code-workspace
+node_modules
