@@ -24,7 +24,7 @@
 
         table {
             border: solid 2px #6a1b9a;
-            font-size:20px;
+            font-size: 20px;
         }
     </style>
 
@@ -64,10 +64,10 @@
 
                 <tbody>
                     <tr>
-                       <td>Movie</td>
-                       <td>Encanto</td>
-                       <td>Watched</td>
-                       <td>10/10</td>
+                        <td>Movie</td>
+                        <td>Encanto</td>
+                        <td>Watched</td>
+                        <td>10/10</td>
                     </tr>
                 </tbody>
 
@@ -107,26 +107,26 @@
 
                         <div class="row">
 
-                            <div class="input-field col s8">
+                            <div class="input-field col s12">
                                 <i class="material-icons prefix purple-text text-darken-3">star</i>
                                 <label for="item_name">Title</label>
                                 <input id="item_name" type="text" required>
-                            </div>
-
-                            <div class="input-field col s4">
-                                <i class="material-icons prefix purple-text text-darken-3">star</i>
-                                <label for="status">Status</label>
-                                <input id="status" type="text" required>
                             </div>
 
                         </div> <!-- end row 1 -->
 
                         <div class="row">
 
-                            <div class="input-field col s8">
-                                <i class="material-icons prefix purple-text text-darken-3">star_border</i>
-                                <textarea id="textarea" class="materialize-textarea"></textarea>
-                                <label for="description">Extra Details</label>
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix purple-text text-darken-3">star</i>
+                                <label for="item_name">Type</label>
+                                <input id="item_name" type="text" required>
+                            </div>
+
+                            <div class="input-field col s4">
+                                <i class="material-icons prefix purple-text text-darken-3">star</i>
+                                <label for="status">Status</label>
+                                <input id="status" type="text" value="To Watch" required>
                             </div>
 
                             <div class="input-field col s4">
@@ -136,6 +136,16 @@
                             </div>
 
                         </div> <!-- end row 2 -->
+
+                        <div class="row">
+
+                            <div class="input-field col s12">
+                                <i class="material-icons prefix purple-text text-darken-3">star_border</i>
+                                <textarea id="textarea" class="materialize-textarea"></textarea>
+                                <label for="description">Extra Details</label>
+                            </div>
+
+                        </div> <!-- end row 3 -->
 
                     </div> <!-- end modal content -->
 
