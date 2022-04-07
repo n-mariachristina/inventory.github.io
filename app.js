@@ -1,12 +1,11 @@
 //set up the server
 const express = require( "express" );
+const logger = require("morgan");
 const app = express();
 const port = 8080;
 
-// define a route for the default home page
-app.get( "/", ( req, res ) => {
-    res.send( "<h1>Hello world!</h1>" );
-} );
+// defining middleware that logs all incoming requests.
+app.use(logger("dev"));
 
 // start the server
 app.listen( port, () => {
@@ -26,4 +25,8 @@ app.get( "/stuff", ( req, res ) => {
 // define a route for the item detail page
 app.get( "/stuff/item", ( req, res ) => {
     res.sendFile( __dirname + "/views/item.html" );
+} );
+
+app.get( "/images/view.jpg", ( req, res ) => {
+    res.sendFile( __dirname + "/images/view.jpg");
 } );
